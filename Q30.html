@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <title>Question30</title>
+  <style>
+    body{
+      background-color: rgb(70, 150, 177);
+    }
+  h1{
+      text-decoration: underline;
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #histogram{
+        height: 30%;
+        width: 40%;
+        background-color: rgb(181, 216, 228);
+        position: absolute;
+        left: 28%;
+        top:32%;
+        padding: 50px;
+        border-radius: 25px;
+    }
+    input{
+            position: relative;
+            top: 30px;
+            margin-left: 20px;
+            font-size: large;
+   }
+    label{
+        position: relative;
+        top: 30px;
+        font-size:x-large;
+        font-weight: bold;
+    }
+    button{
+        position: relative;
+        top:80px;
+        left: 180px;
+        height: 23%;
+        width: 30%;
+        font-size:medium;
+        font-weight: bold;
+        color: rgb(3, 20, 20);
+    }
+    button:hover{
+      background-color: rgb(147, 211, 223);
+    }
+  </style>
+<head>
+<title>Guess the Number!</title>
+<script type="text/javascript">
+  var number = generateNewValue();
+  
+  function generateNewValue(){
+    return Math.floor(1000*Math.random())+1;
+  }
+  
+  function guess(){
+    if (document.getElementById("playerNumber").value == undefined || document.getElementById("playerNumber").value.trim() == "" || isNaN(document.getElementById("playerNumber").value)){
+      alert("Please type a number");
+      document.getElementById("playerNumber").focus();
+      return false;
+    }
+    if (parseInt(document.getElementById("playerNumber").value) > number){
+      alert("Too high\n\nTry again.");
+    }else if (parseInt(document.getElementById("playerNumber").value) < number){
+      alert("Too low\n\nTry again.");
+    }else{
+      alert("Congratulations!!\n\nYou guessed the number.");
+      number = generateNewValue();
+    }
+    document.getElementById("playerNumber").value = "";
+    document.getElementById("playerNumber").focus();
+  }
+</script>
+</head>
+<body>
+  <h1>Guess the number between 1 and 1000!!</h1>
+  <hr>
+  <div id="histogram">
+    <label for="playerNumber" accesskey="n">Enter a guess : </label> 
+    <input type="number" id="playerNumber" value="">
+    <button onclick="guess()">Submit Guess</button>
+  </div>
+</body>
+</html>

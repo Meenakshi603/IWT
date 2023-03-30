@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Question28</title>
+        <style>
+            #ok{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ok" onclick="hide()"></div>
+        <script>
+           fname=String(prompt("Enter name"));
+           lname=String(prompt("Enter name"));
+           name=fname+" "+lname;
+            let h;
+            let block=document.getElementById("ok");
+            function clock()
+            {
+                d=new timer();
+                h=d.getHours();
+            }
+                if(h<12)
+                {
+                    block.innerHTML="Good Morning "+name+""
+                }
+                else if(h<17)
+                {
+                    block.innerHTML="Good Afternoon "+name+""
+                }
+                else{
+                    block.innerHTML="Good Evening "+name+""
+                }
+                
+            function hide()
+            {
+                block.style.display="none";
+            }
+        </script>
+    </body>
+</html>

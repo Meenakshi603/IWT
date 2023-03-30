@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Question24</title>
+    </head>
+    <body>
+        <form method="get">
+            <label>Enter temperature</label>
+            <input type="number" name="input">
+            <select name="inop">
+                <option value="c">Celcius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="k">Kelvin</option>
+            </select>
+            <label>Convert to</label>
+            <select name="temp">
+                <option value="c">Celcius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="k">Kelvin</option>
+            </select>
+            <input type="text" name="output">
+        </form>
+        <button onclick="convert()">Convert</button>
+        <script>
+            function convert()
+            {
+                input=parseFloat(document.forms[0].elements[0].value);
+                temp1=document.forms[0].elements[1].value;
+                temp2=document.forms[0].elements[2].value;
+                if(temp1=="c" && temp2=="k")
+                {
+                    result=input+273;
+                }
+                else if(temp1=="c" && temp2=="f")
+                {
+                    result=input*(9/5)+32;
+                }
+                else if(temp1=="f" && temp2=="c")
+                {
+                    result=(input-32)*(5/9);
+                }
+                else if(temp1=="f" && temp2=="k")
+                {
+                   
+                    result=(input-32)*(5/9)+273;
+                }
+                else if(temp1=="k" && temp2=="c")
+                {
+                    result=input-273;
+                }
+                else if(temp1=="k" && temp2=="f")
+                {
+                    result=(input-273)*(9/5)+32;
+                }
+                else{
+                    result=input;
+                }
+                document.forms[0].elements[3].value=result;
+            }
+        </script>
+    </body>
+</html>

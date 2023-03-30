@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <title>Question20</title>
+        <style>
+            div{
+                height: 100%;
+                width: 100%;
+                display:block;
+               
+                background-color: white;
+                
+            }
+            div nav{
+                position:fixed;
+                height: 10%;
+                width: 100%;
+                background-color: rgb(52, 164, 159);
+            }
+            nav ol{
+                list-style: none;
+                margin:0;
+                padding:0;
+                display:flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                position:relative;
+            }
+            nav ol a{
+                text-decoration: none;
+                
+            }
+            nav ol li{
+                color:white;
+                padding-top: 10px;
+                margin:2px;
+                padding-left: 10px;
+                width:80px;
+                height:35px;
+                align-items: center;
+                position: relative;
+            }
+            nav ol li:hover{
+                background-color: white;
+                color:aqua;
+            }
+            div >.container{
+                height: 89%;
+                width:99.5%;
+                background-color:rgb(52, 164, 159);
+                display:flex;
+                top: 10%;
+                border-style:ridge;
+                justify-content: center;
+                align-items: center;
+                position:relative;
+            }
+            .container>.con{
+                height: 25%;
+                width:20%;
+                border-radius: 50%;
+                background-color:rgb(50, 108, 108);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top:10px;
+                left:40%;
+                position:absolute;
+                
+            }
+            .container>.conn{
+                height: 55%;
+                width:60%;
+                box-shadow: 20px 20px 10px rgb(83, 129, 151);
+                background-color: rgb(255, 255, 255);
+                border:10px inset rgb(78, 165, 215);
+                position:absolute;
+                float:left;
+                text-align: justify;
+                justify-content: center;
+            }
+            .ii{
+                border:2px inset skyblue;
+                height: 80%;
+                width:80%;
+                border-radius: 50%;
+                align-items: center;
+                left:20%;
+            }
+            .con >.ii:hover{
+            transition: 2s;
+        }
+            img{
+                height:20%;
+                width:30%;
+            }
+            #sec{
+                height: 100%;
+                width:100%;
+                background-color:rgb(52, 164, 159);
+                display:flex;
+                border-style:ridge;
+                justify-content: center;
+                align-items: center;
+            }
+            .cont2{
+                height:80%;
+                width:80%;
+                box-shadow: 20px 20px 10px rgb(83, 129, 151);
+                background-color: rgb(255, 255, 255);
+                border:10px inset rgb(78, 165, 215);
+            }
+            .cont2 ul li {
+                font-size: 15px;
+                font-family:sans-serif;
+                left:10px;
+                width:40%;
+                left:20px;
+                height: 10%;
+                padding:10px;
+                margin:20px;
+                float:left;
+                text-align: justify;
+                justify-content: center;
+            }
+            .cont2 .uu li{
+                font-size: 25px;
+                font-family:cursive;
+             
+            }
+            .h{
+                display:flex;
+                align-items: center;
+            }
+            pre{
+                display: inline;
+                float: left;
+                align-items: center;
+                margin-right: 20%;
+                font-size: large;
+                font-weight: 60%;
+            }
+            .uu >li:hover{
+            color:aqua;
+            transition: 2s;
+        }
+            .cont2>#bi{
+                height: 100px;
+                width:100px;
+                color:rgb(50, 108, 108);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top:10px;
+                left:40px;
+                position:relative;
+            }
+            .cont2>#bi:hover{
+                border:3px inset rgb(17, 65, 85);
+                background-color: rgb(73, 151, 151);
+                color:rgb(232, 243, 243);
+                height:130px ;
+                width:130px;
+            }
+            
+            .im{
+                height: 45%;
+                width:45%;
+                align-items: center;
+                left:20%;
+            }
+            .imm{
+                height: 45%;
+                width:45%;
+                align-items: center;
+                left:20%;
+            }
+            .immm{
+                height: 40%;
+                width:50%;
+                align-items: center;
+            }
+            .pro h1{
+                float: left;
+                align-items: center;
+            }
+            .cont3{
+                height:80%;
+                width:80%;
+                box-shadow: 20px 20px 10px rgb(83, 129, 151);
+                background-color: rgb(255, 255, 255);
+                border:10px inset rgb(78, 165, 215);
+            }
+            .cont3>#ai{
+                height:100px;
+                width:150px;
+                color:rgb(50, 108, 108);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top:10px;
+                left:40px;
+                position:relative;
+            }
+            .cont3>#ai:hover{
+                border:3px inset rgb(17, 65, 85);
+                background-color: rgb(73, 151, 151);
+                color:rgb(232, 243, 243);
+                height:100px ;
+                width:130px;
+            }
+            #p1{
+                height:70%;
+                position: relative;
+            }
+            .ab{
+                height:10%;
+                width:30%;
+                position: absolute;
+                margin-left:60%;
+                font-weight: bold;
+                color: rgb(17, 84, 111);
+            }
+            .cont3>#aab{
+                height:50%;
+                width:95%;
+                color:rgb(50, 108, 108);
+                top:10%;
+                left:2.5%;
+                padding: 2px;
+                position:relative;
+            }
+            #imgg{
+                height:20%;
+                width:46%;
+                color:rgb(50, 108, 108);
+                margin:10px;
+                margin-top:3.5%;
+                padding: 2px;
+                float:left;
+                position:relative;
+            }
+            .add{
+                height: 40%;
+                width:10%;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <ol>
+                    <a href="#1"><li>Bio</li></a>
+                    <a href="#2"><li>ACADEMIC</li></a>
+                    <a href="#3"><li>PROJECT</li></a>
+                    <a href="#4"><li>SKILL</li></a>
+                    <a href="#5"><li>Contact</li></a>
+                </ol>
+            </nav>
+                <div class="container">
+                    <div class="con"><img src="images/me1.png" class="ii"></div>
+                    <div class="conn">
+                    <h1 class="h">Hello!!</h1>
+                    <pre>
+                    
+                             My Name is <span style="font-weight: 900;">Meenakshi Chauhan</span>
+                             B-tech IT student
+                             I'm from Uttarakhand, 
+                             currently in Banasthali for my graduation.
+                    </pre>
+                    </div>
+            </div>
+        </div>
+        <a name='1'><div id="sec">
+            <div class="cont2">
+                <div id="bi"><h1>BIO</h1></div>
+                <ul>
+                
+               <li>
+                    I’ve always loved spending way too much time on the computer, and spent my teens tinkering with Photoshop and building crappy websites.
+                </li>
+                <li>Strong in design and integration with intuitive problem-solving skills. Proficient in JAVA, C#, PYTHON, JAVASCRIPT, and SQL. 
+                </li>
+            <li>Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.</li>
+            <li>To work in an organisation which provides me with ample opportunities to enhance my skills and knowledge along with contributing to the growth of the organisation.</li>
+            </ul></div>
+            </div>
+        </a>
+        <a name='2'><div id="sec">
+            <div class="cont3">
+                <div id="ai"><img src="images/im5.png" class="immm"><h1>Acadamics</h1></div>
+                <div id="p1">
+                    <ul>
+                   <li><h3>Bachelor of Technology</h3></li>
+                    <p id="p2">
+                    <div class="ab">CGPA 9.57</div>
+                    Banasthali Vidyapith, Rajasthan <br>
+                    07/2020- Present <br>
+                    Courses -Information Technology Engineering</p>
+                    <li><h3>Board Of School Education Uttarakhand</h3></li>
+                    <p id="p2"></p><b>Intermediate Examination</b><br>
+                    <div class="ab"><b>Marks(%) 90.2</b></div>
+                    R.K.S.V.M Inter College, Bazpur Udham Singh Nagar, Uttarakhand<br>
+                    2019-2020<br><br>
+                    <b>High School Examination</b><br> 
+                    <div class="ab"><b>Marks(%) 89.4</b></div>
+                    S B V M Inter College, Bazpur Udham Singh Nagar, Uttarakhand<br>
+                    2017-2018 </p></ul>
+                </div>
+            </div>
+            </div>
+        </a>
+        <a name='3'><div id="sec">
+            <div class="cont2">
+                <div id="bi"><img src="images/im4.jpg" class="imm"><h1>Project</h1></div>
+                <ul class="uu">
+                    <li>Currently working on AI Yoga trainer</li>
+                </ul>
+            </div>
+            </div>
+        </a>
+        <a name='4'><div id="sec">
+            <div class="cont2">
+                <div id="bi"><img src="images/im1.jpg" class="im"><h1>Skill</h1></div>
+                <ul class="uu">
+                    <li>Java</li>
+                    <li>DBMS</li>
+                    <li>C,C#</li>
+                    <li>DS</li>
+                </ul>
+            </div>
+            </div>
+        </a>
+        <a name='5'><div id="sec">
+            <div class="cont3">
+                <div id="ai"><img src="images/im7.jpg" class="im"><h1>Contact</h1></div>
+                <div id="aab"><div id="imgg"><img src="images/add.png" class="add">Bazpur,Uttarakhand</div><div id="imgg"><img src="images/em.png" class="add">chauhanmeenakshi298@gmail.com</div><div id="imgg"><img src="images/ph.png" class="add">6397932391</div><div id="imgg"><img src="images/lin.png" class="add">https://www.linkedin.com/in/meenakshi-chauhan-bb7b68220</div>
+             </div></div> 
+            </div>
+        </a>
+    </body>
+</html>

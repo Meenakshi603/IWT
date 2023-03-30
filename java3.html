@@ -1,0 +1,42 @@
+<html>
+    <head>      
+    </head>
+    <body>
+        <style>
+            td{
+                color:black;
+                align-items: center;
+                font-size:xx-large;
+            }
+            td:hover{
+                color:rgb(15, 231, 98);
+                font-weight: bolder;
+            }
+        </style>
+        <script>
+            r=parseInt(prompt("Enter row:"));
+            c=parseInt(prompt("Enter column:"));
+            function genTable(r,c)
+            {
+                document.write("<table border='1' height=50% width=25% align='center'>");
+                for(i=0;i<r;i++)
+                {
+                    document.write("<tr>");
+                    for(j=1;j<c;j++)
+                    {
+                        if((i+j)%2==0)
+                        {
+                            document.write("<td bgcolor='black' > "+i*j+"</td>");
+                        }
+                        else{
+                            document.write("<td bgcolor='red'> "+i*j+"</td>");
+                        }
+                    }
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+            }
+            genTable(r,c);
+        </script>
+    </body>
+</html>
